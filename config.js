@@ -3,4 +3,4 @@
    Format internacional: codi de país + número, només xifres. Exemple de format: 34600111222
    No hi posis +, espais ni guions.
 */
-window.DISMON_WHATSAPP = "POSA_AQUI_EL_TELEFON_AMB_PREFIX_34";
+window.DISMON_WHATSAPP = "34693410335";
