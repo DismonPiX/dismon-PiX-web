@@ -5,7 +5,7 @@ function setLanguage(lang){document.documentElement.lang=lang;document.querySele
 const language=document.getElementById('language');language.addEventListener('change',()=>setLanguage(language.value));const saved=localStorage.getItem('dismon-language');if(saved&&translations[saved])language.value=saved;setLanguage(language.value);
 const menuToggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰'}));
 document.getElementById('year').textContent=new Date().getFullYear();
-const whatsappNumber=(window.DISMON_WHATSAPP||'').replace(/\D/g,'');
+constconst whatsappNumber='34693410335';
 const waFloat=document.getElementById('whatsapp-float');
 if(whatsappNumber && !whatsappNumber.includes('POSA')) { waFloat.href='https://wa.me/'+whatsappNumber; waFloat.target='_blank'; waFloat.rel='noopener'; }
 else { waFloat.addEventListener('click',e=>{e.preventDefault();document.getElementById('pressupost').scrollIntoView({behavior:'smooth'});document.getElementById('form-status').textContent=translations[language.value].whatsappMissing;}); }
